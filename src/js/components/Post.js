@@ -11,7 +11,7 @@ export class Post extends Component {
   
   componentDidMount() {
     // clling the new action creator
-    this.props.getData()
+    this.props.getData('https://api.valentinog.com/api/link')
   }
   
   render() {
