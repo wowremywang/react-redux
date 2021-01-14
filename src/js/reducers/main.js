@@ -7,7 +7,7 @@ const initialState = {
   remoteArticles: []
 }
 
-function rootReducer(state = initialState, action) {
+function mainReducer(state = initialState, action) {
   if (action.type === ADD_ARTICLE) {
     return Object.assign({}, state, {
       articles: state.articles.concat(action.payload)
@@ -22,4 +22,4 @@ function rootReducer(state = initialState, action) {
   return state
 }
 
-export default rootReducer
+export default mainReducer
